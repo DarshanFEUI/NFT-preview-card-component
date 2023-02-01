@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,400;1,500&family=Ubuntu:wght@400;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+
+.card   {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 1.6rem;
+    margin: 0 auto;
+}
+
+.nft-image {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.nft-image img {
+    width: 100%;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%, 0.3);
+    display: none;
+}
+
+.image-overlay img {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nft-image:hover .image-overlay {
+    display: block;
+}
+
+.content {
+    margin-top: 1.6rem;
+    line-height: 1.7;
+}
+
+.content h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.para {
+    margin: 1.4rem 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.flex-wrap h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(178, 100%, 50%);
+}
+
+.flex-wrap p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.line {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-top: 1.4rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 1.4rem;
+    gap: 8px;
+}
+
+.profile img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.profile span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.profile span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .card {
+        margin: 0 auto;
+        width: 300px;
+        /* height: 500px; */
+    }
+}
